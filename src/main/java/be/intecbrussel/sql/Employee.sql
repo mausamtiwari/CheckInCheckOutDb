@@ -16,3 +16,9 @@ CREATE TABLE IF NOT EXISTS employee
         FOREIGN KEY (department_id) REFERENCES department (department_id)
 );
 
+
+INSERT INTO employee(person_id, department_id, work_start_date, work_end_date, profile_photo)
+VALUES (2, 1, '2020-09-05', NULL, NULL),
+       (7, 1, '2021-08-05', NULL, NULL),
+       (8, 2, '2017-10-29', NULL, NULL);
+
